@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Tracker</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <span class="logo">&#128247;</span>
+    <h1>Instagram Tracker</h1>
+  </header>
+
+  <section class="card" id="today-card">
+    <div class="card-label">Today</div>
+    <div class="usage-row">
+      <span id="today-used">—</span>
+      <span class="of">of</span>
+      <span id="today-limit-display">—</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+    <div class="grace-msg" id="grace-msg"></div>
+  </section>
+
+  <section class="card">
+    <div class="card-label">Daily limit (minutes)</div>
+    <div class="limit-row">
+      <input type="number" id="limit-input" min="1" max="480" />
+      <button id="save-btn">Save</button>
+    </div>
+    <div class="save-confirm" id="save-confirm"></div>
+  </section>
+
+  <section class="card">
+    <div class="card-label">Last 7 days</div>
+    <canvas id="chart" width="340" height="160"></canvas>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+</html>

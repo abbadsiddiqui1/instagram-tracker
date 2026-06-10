@@ -1,0 +1,121 @@
+#__igt_overlay__ {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2147483647 !important;
+  background: rgba(0, 0, 0, 0.96) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
+#__igt_overlay__ .__igt_box__ {
+  background: #111 !important;
+  border: 1px solid #2a2a2a !important;
+  border-radius: 20px !important;
+  padding: 2.5rem 2.8rem !important;
+  max-width: 420px !important;
+  width: 90% !important;
+  text-align: center !important;
+  color: #e8e8e8 !important;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.8) !important;
+}
+
+#__igt_overlay__ .__igt_icon__ {
+  font-size: 3rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+#__igt_overlay__ .__igt_title__ {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  margin: 0 0 0.5rem !important;
+  color: #fff !important;
+}
+
+#__igt_overlay__ .__igt_meta__ {
+  font-size: 0.85rem !important;
+  color: #888 !important;
+  margin: 0 0 1.25rem !important;
+}
+
+#__igt_overlay__ .__igt_used__ { color: #e05c5c !important; font-weight: 600 !important; }
+#__igt_overlay__ .__igt_limit__ { color: #aaa !important; }
+
+#__igt_overlay__ .__igt_divider__ {
+  height: 1px !important;
+  background: #2a2a2a !important;
+  margin: 0 0 1.25rem !important;
+}
+
+#__igt_overlay__ .__igt_label__ {
+  font-size: 0.8rem !important;
+  color: #888 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em !important;
+  margin: 0 0 0.75rem !important;
+}
+
+#__igt_overlay__ .__igt_problem__ {
+  font-size: 2.4rem !important;
+  font-weight: 800 !important;
+  color: #fff !important;
+  letter-spacing: -0.02em !important;
+  margin: 0 0 1.25rem !important;
+}
+
+#__igt_overlay__ .__igt_row__ {
+  display: flex !important;
+  gap: 0.6rem !important;
+  justify-content: center !important;
+}
+
+#__igt_overlay__ .__igt_input__ {
+  background: #1e1e1e !important;
+  border: 1px solid #333 !important;
+  border-radius: 10px !important;
+  color: #fff !important;
+  font-size: 1.1rem !important;
+  padding: 0.6rem 1rem !important;
+  width: 140px !important;
+  text-align: center !important;
+  outline: none !important;
+  -moz-appearance: textfield !important;
+}
+
+#__igt_overlay__ .__igt_input__::-webkit-outer-spin-button,
+#__igt_overlay__ .__igt_input__::-webkit-inner-spin-button { -webkit-appearance: none !important; }
+
+#__igt_overlay__ .__igt_input__:focus {
+  border-color: #555 !important;
+}
+
+#__igt_overlay__ .__igt_btn__ {
+  background: #4caf7d !important;
+  border: none !important;
+  border-radius: 10px !important;
+  color: #fff !important;
+  font-size: 1.2rem !important;
+  padding: 0.6rem 1.1rem !important;
+  cursor: pointer !important;
+  transition: background 0.15s !important;
+}
+
+#__igt_overlay__ .__igt_btn__:hover { background: #3d9e6c !important; }
+
+#__igt_overlay__ .__igt_error__ {
+  font-size: 0.8rem !important;
+  color: #e05c5c !important;
+  margin: 0.6rem 0 0 !important;
+  min-height: 1.2em !important;
+}
+
+@keyframes __igt_shake__ {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-10px); }
+  40%, 80% { transform: translateX(10px); }
+}
+
+#__igt_overlay__ .__igt_shake__ {
+  animation: __igt_shake__ 0.4s ease !important;
+}
